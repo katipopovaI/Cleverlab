@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 50px;
+        color: #6e76f1;
+      }
+
+      div {
+        margin: 0 auto;
+      }
+
+      .form-container {
+        width: 400px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center" ;>Cleverland</h1>
+    <h2 style="text-align: center" ;>Формы. Элементы форм</h2>
+    <div class="form-container">
+      <fieldset>
+        <legend>Данные пользователя</legend>
+        <p>Логин: <input name="login" /></p>
+        <p>Пароль: <input type="password" name="pass" /></p>
+        <p><input type="submit" value="Вход" /></p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Пожелания</legend>
+
+        <select style="width: 100px" атрибуты>
+          <option атрибуты>Орша</option>
+          <option атрибуты>Минск</option>
+          <option атрибуты>Гомель</option>
+        </select>
+
+        <p>
+          <select style="width: 200px" name="select" size="4" multiple>
+            <option value="s1">Компьютер</option>
+            <option value="s2">Смартфон</option>
+            <option value="s3">Машина</option>
+            <option value="s4">Свой дом</option>
+            <option value="s5">Квартира</option>
+            <option selected value="s6">Сад</option>
+          </select>
+        </p>
+
+        <p>Просите что хотите<input name="a" /></p>
+        <p><input type="checkbox" /><label>Текст</label></p>
+        <textarea rows="10" cols="30">Много текста</textarea>
+        <p><input type="submit" value="Отправить" /></p>
+      </fieldset>
+    </div>
+  </body>
+</html>
