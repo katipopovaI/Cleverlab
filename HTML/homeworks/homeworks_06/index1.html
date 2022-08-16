@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .border {
+        border: 0 none;
+      }
+      .language {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Регистрационная форма пользователя</legend>
+
+        <p>
+          Имя:
+          <input type="text" size="30" pattern="^[А-Яа-яЁё\s]+$" required />
+        </p>
+
+        <p>
+          Укажите возраст:
+          <input list="cocktail" />
+          <datalist id="cocktail">
+            <option>10-15 лет</option>
+            <option>15-20 лет</option>
+            <option>20-30 лет</option>
+            <option>30-40 лет</option>
+            <option>Старше 40 лет</option>
+          </datalist>
+        </p>
+        <p>Укажите пол:</p>
+        <div>
+          <label for="malegender">мужской</label>
+          <input type="radio" id="malegender" name="gender" value="male" />
+          <label for="female">женский</label>
+          <input type="radio" id="female" name="gender" value="woman" />
+        </div>
+        <p>
+          Страна проживания:
+          <select name="Country_of_Residence" size="1">
+            <option disabled>Беларусь</option>
+            <option selected value="Беларусь">Беларусь</option>
+            <option>Российская федерация</option>
+            <option>Другое государство</option>
+          </select>
+        </p>
+        <p>
+          Владение языками: русский
+          <input type="checkbox" name="Russian_language" value="Russian" />
+          белорусский
+          <input
+            type="checkbox"
+            name="Belarusian_language"
+            value="Belarusian"
+          />
+          английский
+          <input type="checkbox" name="English_language" value="English" />
+        </p>
+        <p>
+          Фото профиля:
+          <input type="file" name="photo" accept="image/*,image/jpeg" />
+        </p>
+        <p>Введите логин: <input type="email" name="login" required /></p>
+        <p>
+          Ведите пароль:<input
+            type="password"
+            name="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          />
+        </p>
+        <p>
+          Повторите праоль:<input
+            type="repeat_password"
+            name="repeat password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          />
+        </p>
+      </fieldset>
+      <p>
+        <input type="reset" value="Сброс" />
+        <input type="submit" value="Отправить" />
+      </p>
+    </form>
+  </body>
+</html>

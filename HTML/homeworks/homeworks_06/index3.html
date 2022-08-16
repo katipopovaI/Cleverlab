@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+    <fieldset>
+      <legend>Параметра автомобиля</legend>
+        <p>Марка автомобиля: <input type="text" size="30" required /></p>
+        <p> Объем двигателя, см <sup>3</sup>:
+          <input type="number" size="30"required />
+        </p>
+        <p>Область:
+          <select name="Country" size="1">
+            <option disabled>Брестская</option>
+            <option selected value="брестская">Брестская</option>
+            <option>Витебская</option>
+            <option>Гомельская</option>
+            <option>Гродненская</option>
+            <option>Минская</option>
+            <option>Могилевская</option>
+          </select>
+        </p>Тип КПП<br />
+        <input type="radio" name="choice" value="automatic" />Автомат<br />
+        <input type="radio" name="choice" value="Mechanics" />Механика<br />
+      <br>
+        Двигатель<br>
+        <input type="checkbox" name="electro" value="electro" />Электро<br>
+        <input type="checkbox" name="Diesel" value="Diesel" />Дизель<br>
+        <input type="checkbox" name="Petrol" value="Petrol" />Бензин<br>
+         <input
+            type="checkbox"
+            name="propane_butane"
+            value="propane butane"
+          />Пропан-бутан
+      </br>
+        <input type="checkbox" name="Methane" value="Methane" />Метан<br>
+        <p>Описание</p>
+            <textarea rows="10" cols="45"></textarea>   
+            <p>
+                <input type="submit" value="Отправить" />
+                <input type="reset" value="Очистить" />
+           </p>
+    </fieldset>
+ </form>
+  </body>
+</html>
