@@ -5,43 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-fieldset {
-   border:0 none;
-}
-    </style>
   </head>
   <body>
     <form>
-    <fieldset>
-    <h1>Запись на курсы</h1>
-    <hr />
-        <p>
-          Имя:
-          <input
-            type="text"
-            size="30"
-            alt="Введите ваше имя"
-            pattern="^[А-Яа-яЁё\s]+$"
-            required
-          />
-        </p>  
-        <p>
-          Язык программирования:<br />
-          <input type="radio" name="choice" value="c" />C++<br />
-          <input type="radio" name="choice" value="php" />PHP<br />
-          <input type="radio" name="choice" value="python" />Python
-        </p>
+      <h1>Запись на курсы</h1>
+      <hr />
+      <p>
+        Имя:
+        <input
+          type="text"
+          size="30"
+          alt="Введите ваше имя"
+          pattern="^[А-Яа-яЁё\s]+$"
+          required
+        />
+      </p>
+      <p>
+        Язык программирования:<br />
+        <input type="radio" name="choice" value="c" />C++<br />
+        <input type="radio" name="choice" value="php" />PHP<br />
+        <input type="radio" name="choice" value="python" />Python
+      </p>
       <br />
-        <p>Дополнительная информация:</p>
-        <textarea rows="4" cols="25">Есть опыт программирования на C++</textarea >
-        <p>
-          Секретное слово:
-          <input type="password" size="40" maxlength="30" required />
-        </p>
-      <input type="reset" value="Отправить" />
-      <input type="submit" value="Сброс" />
-    </fildset>
+      <p>Дополнительная информация:</p>
+      <textarea rows="4" cols="25">Есть опыт программирования на C++</textarea>
+      <p>
+        Секретное слово:
+        <input type="password" size="40" maxlength="30" required />
+      </p>
+      <input type="submit" value="Отправить" />
+      <input type="reset" value="Сброс" />
     </form>
   </body>
 </html>
