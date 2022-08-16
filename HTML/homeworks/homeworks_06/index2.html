@@ -12,11 +12,12 @@ fieldset {
     </style>
   </head>
   <body>
+    <form>
     <fieldset>
     <h1>Запись на курсы</h1>
     <hr />
     
-      <form>
+    
         <p>
           Имя:
           <input
@@ -27,35 +28,24 @@ fieldset {
             required
           />
         </p>
-      </form>
-      <form>
+     
         <p>
           Язык программирования:<br />
-
           <input type="radio" name="choice" value="c" />C++<br />
           <input type="radio" name="choice" value="php" />PHP<br />
           <input type="radio" name="choice" value="python" />Python
         </p>
-      </form>
       <br />
-      <form>
         <p>Дополнительная информация:</p>
-
-        <textarea rows="4" cols="25">
-Есть опыт программирования на C++</textarea
-        >
-      </form>
-      <form>
+        <textarea rows="4" cols="25">Есть опыт программирования на C++</textarea >
         <p>
           Секретное слово:
           <input type="password" size="40" maxlength="30" required />
         </p>
-      </form>
-      <br />
-      <form>
       <input type="reset" value="Отправить" />
       <input type="submit" value="Сброс" />
+    </fildset>
     </form>
-</fildset>
+
   </body>
 </html>
