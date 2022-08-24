@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>   
+    <style>
+      header {
+        background: #98fb98 url(images/market.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+        height: 300px;
+      }
+      h1 span {
+        border-bottom: 2px solid black;
+        text-align: center;
+      }
+      ul {
+        list-style: none; /*убираем маркеры списка*/
+        margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+        padding-left: 0; /*убираем левый отступ, равный 40px*/
+        border-bottom: 2px inset;
+        border-top: 2px inset;
+        width: 157px;
+      }
+      .logo{
+       float: left;
+      }
+nav{
+    float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block; /*один из способов разместить элементы в строку*/
+}
+      a {
+        text-decoration: none;
+      } /*убираем подчеркивание текста ссылок*/
+
+      li {
+        display: inline;
+        border-left: 2px inset;
+        border-right: 2px inset;
+      }
+      .main {
+        background-color: #90ee90;
+        display: flex;  
+        align-items:stretch;
+      }
+      .center {
+        margin-left: 1rem; /* Расстояние между блоков */
+    padding: 10px; /* Поля вокруг текста */
+    width: 33.333%; 
+      }
+      .center_text{
+text-align: center;
+border-bottom: 2px inset;
+      }  
+      .shop {
+        margin-left: 1rem; /* Расстояние между блоков */
+    padding: 10px; /* Поля вокруг текста */
+    width: 33.333%; 
+      }    
+      .weather {
+        margin-left: 1rem; /* Расстояние между блоков */
+    padding: 10px; /* Поля вокруг текста */
+    width: 33.333%; 
+      }
+      .footer_conteiner{
+        display: flex;  
+        align-items:stretch;   
+        background-color: #00fa9a;
+      }
+      .map {
+        margin-left: 1rem; /* Расстояние между блоков */
+    padding: 10px; /* Поля вокруг текста */
+    width: 44.333%; 
+      }
+      .adress{
+        margin-left: 1rem; /* Расстояние между блоков */
+    padding: 10px; /* Поля вокруг текста */
+    width: 44.333%; 
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Добро пожаловать в интернет магазин</span></h1>
+        <a href="/" class="logo">LOGO</a>
+        <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Акции</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="main">
+      <div class="shop">
+          <span
+            ><a href="https://www.colins.com.tr/">
+              <img
+                src="images/colins.jpg"
+                alt="картинка"
+                width="200px"
+                height="200px" /></a
+          ></span>
+          <span
+            ><a href="https://www.sinsay.com/special/store/">
+              <img
+                src="images/Sinsay.jpeg"
+                alt="картинка"
+                width="200px"
+                height="200px" /></a></span
+          ><span>
+            <a href="https://detmir.by/">
+              <img
+                src="images/detmir.jpeg"
+                alt="картинка"
+                width="200px"
+                height="200px" /></a
+          ></span>
+          <span>
+            <a href="https://gippo.by/">
+              <img
+                src="images/hippo.jpeg"
+                alt="картинка"
+                width="200px"
+                height="200px"
+            /></a>
+          </span>
+      </div>
+      <div class="center">
+       <form>
+<span class="center_text">Оформление онлайн заказа:</span><br>
+<label>Ваше имя:<input type="text" size="30" name="name" required /></label></br>
+<label>Фамилия:<input type="text" size="30" name="middle_name" required /></label></br>
+<label>Дата доставки:<input type="date" name="date" /></label><br>
+<label>Выберите магазин:
+     <select name="experience" size="1">
+        <option selected value="shop">Выберите магазин</option>
+        <option>Colins</option>
+        <option>Детский мир</option>
+        <option>Гиппо</option>
+        <option>Sinsay</option>  </select>    
+</label><br>
+<label>Контактный телефон:+375<input
+      type="number"
+      name="phone_number"
+      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      required
+  /></label><br>
+            </form>
+      </div>
+      <div class="weather">
+        <!-- weather widget start -->
+    <div class="weather">
+        <a target="_blank" href="https://nochi.com/weather/minsk-17469">
+          <img
+            src="https://w.bookcdn.com/weather/picture/3_17469_1_20_137AE9_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=589&anc_id=55197"
+            alt="booked.net" />
+        </a>
+      </div>
+  <!-- weather widget end -->
+      </div>
+    </div>
+
+    <footer>
+        <div class="footer_conteiner">
+      <div class="map"> 
+          <a
+            href="https://yandex.by/maps/org/expobel/1295096067/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Expobel</a
+          >
+          <a
+            href="https://yandex.by/maps/29630/minsk-district/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Торговый центр в Минской области</a
+          >
+          <a
+            href="https://yandex.by/maps/29630/minsk-district/category/department_store/184108085/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+            >Универмаг в Минской области</a
+          >
+          <iframe
+            src="https://yandex.by/map-widget/v1/-/CCURjZTYOB"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+        <div class="adress">
+        <address>
+          Беларусь,Минский район,Боровлянский сельсовет,деревня Боровая-5
+        </address>
+        <p>все права защищены&#169;</p>
+        <p>
+          Контактный телефон:<span>
+            <a href="”tel:+1111111”">+111-11-11</a>
+          </span>
+        </p>
+        <p><a href="#top">Начало</a></p>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
