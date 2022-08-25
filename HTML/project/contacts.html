@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      header {
+        background: #98fb98 url(images/1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+        height: 500px;
+      }
+      h1 span {
+        border-bottom: 2px solid black;
+        text-align: center;
+      }
+      nav {
+        float: right;
+        background: #98fb98;
+        border: 3px inset blue;
+        font-size: 30px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav li {
+        display: inline-block; /*один из способов разместить элементы в строку*/
+      }
+      a {
+        text-decoration: none;
+      } /*убираем подчеркивание текста ссылок*/
+
+      li {
+        display: inline;
+        border-left: 1px inset blue;
+      }
+      .active_link {
+        background-color: antiquewhite;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: blueviolet;
+      }
+      .main {
+        background-color: #90ee90;
+        display: flex;
+        align-items: stretch;
+      }
+      .form {
+        width: 39%;
+        margin-left: 1rem; /* Расстояние между блоков */
+        padding: 10px; /* Поля вокруг текста */
+      }
+      .map {
+        margin-left: 1rem; /* Расстояние между блоков */
+        padding: 10px; /* Поля вокруг текста */
+        width: 39%;
+      }
+      .contacts {
+        margin-left: 1rem; /* Расстояние между блоков */
+        padding: 10px; /* Поля вокруг текста */
+        width: 20%;
+        font-size: 15px;
+        text-align: left;
+      }
+      footer {
+        text-align: right;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Детская литература</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li class="active_link"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <div class="main">
+      <div class="contacts">
+        <h2>Адресс:</h2>
+        <address>
+          Беларусь,Минский район,Боровлянский сельсовет,деревня Боровая-5
+        </address>
+        <p>
+          Контактный телефон:<span>
+            <a href="”tel:+1111111”">+111-11-11</a></span
+          >
+        </p>
+      </div>
+
+      <div class="form">
+        <h2>Напиши нам</h2>
+        <form>
+          <fieldset>
+            <p>
+              <label
+                >Имя:<input type="text" size="30" name="name" required
+              /></label>
+            </p>
+            <p>
+              <label
+                >email:<input type="text" size="30" name="name" required
+              /></label>
+            </p>
+            <label
+              >Контактный телефон:+375<input
+                type="number"
+                name="phone_number"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required /></label
+            ><br />
+            <label
+              >Выберите книгу:
+              <select name="experience" size="1">
+                <option selected value="shop">Азбука</option>
+                <option>Малыш и карлсон</option>
+                <option>Дядя федор</option>
+                <option>Маленький принц</option>
+              </select>
+            </label>
+            <p>
+              Дополнительная информация:<br />
+              <textarea rows="8" cols="15"></textarea>
+            </p>
+            <p>
+              Способ оплаты:<br />
+              <input type="radio" name="choice" value="online" />online<br />
+              <input type="radio" name="choice" value="card" />карточкой<br />
+              <input type="radio" name="choice" value="in_cash" />наличными
+            </p>
+            <p>
+              <input type="reset" value="Сброс" />
+              <input type="submit" value="Отправить" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="map">
+        <h2>Мы находимся:</h2>
+        <a
+          href="https://yandex.by/maps/org/expobel/1295096067/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Expobel</a
+        >
+        <a
+          href="https://yandex.by/maps/29630/minsk-district/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+          >Торговый центр в Минской области</a
+        >
+        <a
+          href="https://yandex.by/maps/29630/minsk-district/category/department_store/184108085/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+          >Универмаг в Минской области</a
+        >
+        <iframe
+          src="https://yandex.by/map-widget/v1/-/CCURjZTYOB"
+          width="560"
+          height="400"
+          frameborder="1"
+          allowfullscreen="true"
+          style="position: relative"
+        ></iframe>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <p>Все права защищены&#169;</p>
+      <p><a href="#top">Начало</a></p>
+    </footer>
+  </body>
+</html>

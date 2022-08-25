@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Книжный магазин детской литературы</title>
+    <title>Document</title>
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-      }
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;        
+    text-align: center;
+  }
       header {
         background: #98fb98 url(images/1.jpeg);
         background-position: center;
@@ -22,7 +23,7 @@
         color: blue;
         font-size: 30px;
         font-family: "Courier New", Courier, monospace;
-        height: 500px;
+        height:400px;
       }
       h1 span {
         border-bottom: 2px solid black;
@@ -42,34 +43,40 @@
       nav li {
         display: inline-block; /*один из способов разместить элементы в строку*/
       }
+      li {
+        display: inline;
+        border-left: 1px inset blue;
+      }
       a {
         text-decoration: none;
       } /*убираем подчеркивание текста ссылок*/
 
-      .active_link {
+      /*.active_link {
         background-color: antiquewhite;
-      }
+      }*/
       h2 {
         text-align: center;
         font-size: 30px;
         color: blueviolet;
       }
-      .main {
-        background-color: aquamarine;
-        height: 40%;
-      }
-
-      h3 {
-        font-size: 20px;
-        color: blue;
-      }
       .leftimg {
         float: left; /* Выравнивание по левому краю */
         margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
       }
-      footer {
+      main{
+        height: 50%;
+      }
+    
+.text{
+    text-align: justify;
+    width: 80%;
+    font-size:18px;
+}
+      .footer {
+        height: 10%;
         text-align: right;
         background-color: aquamarine;
+       
       }
     </style>
   </head>
@@ -78,42 +85,30 @@
       <h1><span>Детская литература</span></h1>
       <nav>
         <ul>
-          <li class="active_link"><a href="index.html">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <hr />
-    <div class="main">
-      <div class="greetings">
-        <h2>
-          Мы рады приветствовать вас в нашем интернет магазине детской
-          литературы.<br />
-          Приятных покупок.
-        </h2>
-      </div>
-      <hr />
-      <div class="categories">
-        <div>
-          <img
-            src="images/2.png"
-            alt="картинка"
-            width="100"
-            height="100"
-            class="leftimg"
-          />
-        </div>
-        <div>
-          <h3 align="left">Выберите категорию:</h3>
-          <ul>
-            <li><a href="catalog.html">Художественная литература</a></li>
-            <li><a href="catalog.html">Развивающие книги</a></li>
-          </ul>
-        </div>
-      </div>
+<main>
+    <div class="books">
+        <img
+              src="images/princ.jpeg"
+              alt="картинка"
+              width="200px"
+              height="300px"
+              class="leftimg" /></a
     </div>
-    <hr />
+    <div class="text">
+        <p>Самое знаменитое произведение Антуана де Сент-Экзюпери с авторскими рисунками. Мудрая и "человечная" сказка-притча, в которой просто и проникновенно говорится о самом важном: о дружбе и любви, о долге и верности, о красоте и нетерпимости к злу.
+
+            "Все мы родом из детства", – напоминает великий француз и знакомит нас с самым загадочным и трогательным героем мировой литературы.</p><br>
+            <p><form><button>В корзину</button></form></p>
+    </div>
+</main>
+<hr>
     <footer>
       <div class="footer">
         <p>Все права защищены&#169;</p>
