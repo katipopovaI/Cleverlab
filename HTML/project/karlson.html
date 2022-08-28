@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;        
+    text-align: center;
+  }
+      header {
+        background: #98fb98 url(images/1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+        height:400px;
+      }
+      h1 span {
+        border-bottom: 2px solid black;
+        text-align: center;
+      }
+      nav {
+        float: right;
+        background: #98fb98;
+        border: 3px inset blue;
+        font-size: 30px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav li {
+        display: inline-block; /*один из способов разместить элементы в строку*/
+      }
+      li {
+        display: inline;
+        border-left: 1px inset blue;
+      }
+      a {
+        text-decoration: none;
+      } /*убираем подчеркивание текста ссылок*/
+
+      /*.active_link {
+        background-color: antiquewhite;
+      }*/
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: blueviolet;
+      }
+      .leftimg {
+        float: left; /* Выравнивание по левому краю */
+        margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+      }
+      main{
+        height: 50%;
+      }
+    
+.text{
+    text-align: justify;
+    width: 80%;
+    font-size:18px;
+}
+      .footer {
+        height: 10%;
+        text-align: right;
+        background-color: aquamarine;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Детская литература</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+<main>
+    <div class="books">
+        <img
+              src="images/karlson.jpeg"
+              alt="картинка"
+              width="200px"
+              height="300px"
+              class="leftimg" /></a
+    </div>
+    <div class="text">
+        <p>Взрослые часто удивляются: почему детям так нравится Карлсон? Противный, капризный, невоспитанный, вечно требующий вкусной еды... Этот ряд можно продолжать до бесконечности. Может, потому, что каждое мгновение он готов проказничать, и не всегда невинно? Дурное влияние улицы (в данном случае – крыши) всегда привлекательно для домашних детей? Думается, это совсем не так.
+
+            Ведь Карлсон для Малыша – не отпетый хулиган и заводила в рискованных играх, а скорее одинокий ребенок, который нуждается в ласке, участии и семейном тепле. Малыш, несмотря на свой маленький возраст, очень хорошо это чувствует. Он жалеет Карлсона и прощает ему многое. Эта великая книга учит ребенка любви и терпимости к тем, кого любить трудно.</p><br>
+            <p><form><button>В корзину</button></form></p>
+    </div>
+</main>
+<hr>
+    <footer>
+      <div class="footer">
+        <p>Все права защищены&#169;</p>
+        <p><a href="#top">Начало</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

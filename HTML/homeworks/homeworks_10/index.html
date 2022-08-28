@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background: rgb(41, 40, 40);
+      }
+      header {
+        background: rgb(13, 13, 13) url(images/online-kino_poster.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        float: center;
+        height: 40%;
+        margin: auto; /* Выравниваем по центру */
+      }
+      nav {
+        background: rgb(13, 13, 13);
+        font-size: 20px;
+        text-align: center;
+        height: 5%;
+        padding: 10px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav li {
+        display: inline-block; /*один из способов разместить элементы в строку*/
+      }
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      } /*убираем подчеркивание текста ссылок*/
+      li {
+        display: inline;
+        border-right: 1px inset rgb(242, 242, 248);
+        text-decoration: aliceblue;
+      }
+      main {
+        background: #1d1d1f;
+        text-align: center;
+        margin: auto; /* Выравниваем по центру */
+      }
+      .text {
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="audio.html">Музыка</a></li>
+        <li><a href="video.html">Фильмы</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="text">
+        <p>
+          Хотите быть в курсе новостей кино и смотреть горячие новинки 2017 и
+          2018 года в кинотеатрах?<br />
+          С нами возможно всё!<br />
+          Вы узнаете о громких премьерахи посмотрите трейлеры самых ожидаемых
+          фильмов. Мы расскажем обо всех картинах, которые идут в прокате, чтобы
+          Вы ничего не пропутили. <br />Предпочетаете кинотеатрам домашний уют?
+          <br />На нашем сайте Вы можете смотреть новинки кино онлайн и в
+          хорошем качестве.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+         * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      header {
+        background: #98fb98 url(images/1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+        height: 500px;
+      }
+      h1 span {
+        border-bottom: 2px solid black;
+        text-align: center;
+      }
+      nav {
+        float: right;
+        background: #98fb98;
+        border: 3px inset blue;
+        font-size: 30px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav li {
+        display: inline-block; /*один из способов разместить элементы в строку*/
+      }
+      li {
+        display: inline;
+        border-left: 1px inset blue;
+      }
+      a {
+        text-decoration: none;
+      } /*убираем подчеркивание текста ссылок*/
+
+      .active_link {
+        background-color: antiquewhite;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: blueviolet;
+      }
+      .main{
+        height: 40%;
+      }
+.books{
+        display: flex;  
+       /* align-items:stretch;*/
+       flex-wrap: wrap;
+  height: 250px;
+  align-content: space-between;
+}
+.leftimg {
+        float: left; /* Выравнивание по левому краю */
+        margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+      }
+      .footer {
+        text-align: right;
+        background-color: aquamarine;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Детская литература</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li class="active_link"><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <div class="main">
+      <h2>Каталог товаров:</h2>
+      <hr />
+      <div class="books">
+        <p>
+          <a href="images/fedor.jpeg">
+            <img
+              src="images/fedor.jpeg"
+              alt="картинка"
+              width="100px"
+              height="200px"
+              class="leftimg" /></a
+          ><br />
+          <p><a href="fedor.html"
+            >
+              Дядя Федор, пес и кот.<br />
+              Эдуард Успенский, 2019
+            </p></a
+          >
+        </p>
+        <br />
+        <p>
+          <a href="images/princ.jpeg">
+            <img
+              src="images/princ.jpeg"
+              alt="картинка"
+              width="100px"
+              height="200px"
+              class="leftimg"
+          /></a><br>
+          <a href="princ.html"
+            ><p>
+              Маленький принц.<br />
+              Антуан де Сент-Экзюпери, 2018
+            </p></a
+          >
+        </p>
+        <br />
+        <p>
+            <a href="images/karlson.jpeg">
+              <img
+                src="images/karlson.jpeg"
+                alt="картинка"
+                width="100px"
+                height="200px"
+                class="leftimg" /></a
+            ><br />
+            <p><a href="karlson.html"
+              >
+              Малыш и Карлсон, который живет на крыше.<br />
+                Астрид Линдегрен, 2018
+              </p></a
+            >
+          </p>
+          <br />
+          <p>
+            <a href="images/azbyka.webp">
+              <img
+                src="images/azbyka.webp"
+                alt="картинка"
+                width="100px"
+                height="200px"
+                class="leftimg" /></a
+            ><br />
+            <p><a href="azbyka.html"
+              >
+              Букварь.<br />
+                Надежда Жукова, 2018
+              </p></a
+            >
+          </p>
+      </div>
+    </div>
+    <hr />
+    <footer>
+        <div class="footer">
+      <p>Все права защищены&#169;</p>
+      <p><a href="#top">Начало</a></p>
+        </div>
+    </footer>
+  </body>
+</html>
