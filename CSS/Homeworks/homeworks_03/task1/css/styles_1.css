@@ -1,0 +1,19 @@
+p {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+.p_1 {
+  background-color: orange;
+  line-height: 1.1em; /*высоту строк*/
+  text-indent: 1%; /*отступ первой строки*/
+  word-spacing: 5px; /*расстояние между словами*/
+  letter-spacing: 1px; /*расстояние между отдельными буквами*/
+}
+.p_2 {
+  background-color: violet;
+  line-height: 1.6em;
+  text-indent: 1%;
+  word-spacing: 15px;
+  letter-spacing: 3px;
+}
