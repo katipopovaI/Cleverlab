@@ -78,9 +78,8 @@ p:nth-of-type(2) {
   font-size: 34px;
 }
 
-p::first-line {
+p::first-line:not(:nth-child(2)) {
   font-style: italic; /*курсив*/
   font-weight: bold; /*полужирный*/
   font-size: larger;
 }
-/*p::first-line:not(p:nth-of-type(2)) не работает*/
