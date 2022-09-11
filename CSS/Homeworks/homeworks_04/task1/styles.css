@@ -13,7 +13,7 @@
 }
 .div_2 {
   margin-top: 15px;
-  width: 300px;
+  width: 250px;
   height: 200px;
   background-color: violet;
   min-width: 400px;
@@ -23,6 +23,8 @@
   outline-offset: 2px;
 }
 .div_3 {
+  border-radius: 10px;
+  padding: 10px;
   margin-top: 15px;
   position: relative;
   background-color: #98fb98;

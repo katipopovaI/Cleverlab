@@ -16,22 +16,25 @@ table {
   empty-cells: hide;
 }
 th,
-td,
-tr {
+td {
   border-radius: 5px;
   width: 120px;
   padding: 15px;
+  font-size: larger;
 }
-tr:first-child {
+th {
+  font-weight: 700;
+  color: white;
+}
+
+tr:first-of-type {
   background: linear-gradient(to top, #8af004, #6ab623);
-  color: white;
 }
-th:first-child {
-  background: linear-gradient(45deg, #8af004, #6ab623);
-  color: white;
+th:first-of-type {
+  background: linear-gradient(45deg, #8af004, #6dbb21);
 }
 td {
-  background-color: #90ee90;
+  background-color: rgba(128, 255, 0, 0.425);
   text-align: center;
   font-size: larger;
 }
