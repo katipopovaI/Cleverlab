@@ -4,37 +4,25 @@ table {
   border-spacing: 5px;
 }
 
-.table_1 {
-  caption-side: top;
-  border-collapse: collapse;
+th {
+  border-radius: 5px;
+  width: 120px;
+  padding: 15px;
+  background: linear-gradient(to top, #87eb06, #6dbb21);
+  color: white;
+  font-weight: 700;
+  font-size: larger;
 }
 
-.table_2 {
-  caption-side: bottom;
-  border-collapse: separate;
-  border-spacing: 5px;
-  empty-cells: hide;
-}
-th,
 td {
   border-radius: 5px;
   width: 120px;
   padding: 15px;
-  font-size: larger;
-}
-th {
-  font-weight: 700;
-  color: white;
-}
-
-tr:first-of-type {
-  background: linear-gradient(to top, #8af004, #6ab623);
-}
-th:first-of-type {
-  background: linear-gradient(45deg, #8af004, #6dbb21);
-}
-td {
   background-color: rgba(128, 255, 0, 0.425);
   text-align: center;
   font-size: larger;
+}
+
+th:first-of-type {
+  background: linear-gradient(45deg, #8af004, #6dbb21);
 }
