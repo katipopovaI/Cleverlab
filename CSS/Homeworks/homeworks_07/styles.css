@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  bottom: 15px;
+  background-color: rgb(36, 77, 77);
+}
+.logo {
+  background-color: rgb(246, 162, 59);
+  justify-content: center;
+  height: 150px;
+  margin: 30px;
+  flex: 0.2 1 auto;
+}
+.top-metu {
+  display: flex;
+  background-color: rgb(17, 17, 38);
+  height: 50px;
+  width: 100%;
+  color: white;
+  justify-content: center;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  border: 5px solid white;
+  background-color: white;
+}
+
+.main_top {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#top,
+#bottom {
+  background-color: aqua;
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid white;
+  height: 70px;
+}
+.main_center span {
+  display: flex;
+  flex: 1 1 100px;
+  justify-content: center;
+}
+.main_center {
+  display: flex;
+  flex: 4 1 auto;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+}
+.main_bottom {
+  background-color: aqua;
+  flex: 1 1 50px;
+  display: flex;
+  border: 3px solid white;
+  height: 70px;
+  justify-content: space-around;
+}
+.left-panel {
+  display: flex;
+  flex: 1 1 70px;
+  background-color: rgb(138, 39, 187);
+  justify-content: center;
+  color: white;
+}
+.right-panel {
+  display: flex;
+  flex: 1 1 70px;
+  background-color: rgb(138, 39, 187);
+  justify-content: center;
+  color: white;
+}
+.footer {
+  display: flex;
+  background-color: rgb(2, 31, 2);
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: 140px;
+}
