@@ -1,0 +1,13 @@
+.div_1 {
+  display: block;
+  background: green;
+  height: 70px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 1px 0 #b22222;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}

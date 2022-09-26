@@ -1,0 +1,36 @@
+.div_1 {
+  background-color: #98fb98;
+  border: 1px solid green;
+  width: 700px;
+  height: 70px;
+  margin: 0px;
+  display: block;
+  position: relative;
+}
+.green {
+  color: green;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 0px;
+}
+.blue {
+  color: blue;
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.div_2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.div_4 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.div_3 {
+  padding-left: 60px;
+  padding-right: 5px;
+  position: absolute;
+}

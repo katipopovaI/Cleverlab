@@ -1,0 +1,30 @@
+.div_1 {
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+  margin-left: 35px;
+  margin-top: 30px;
+  border: 5px rgb(20, 243, 20) dashed;
+}
+.div_2 {
+  width: 70px;
+  height: 50px;
+  background: radial-gradient(35px 35px at 10px 10px, #00ffff, #ffffff);
+  padding: 5px;
+  border-width: 2px;
+  float: left;
+  border: orange solid;
+}
+.div_3 {
+  width: 70px;
+  height: 50px;
+  background: linear-gradient(45deg, #0000ff, #ffffff);
+  padding: 5px;
+  border-width: 2px;
+  float: right;
+  border: #ff1493 dotted;
+}
+.div_3:hover {
+  opacity: 0.3;
+}

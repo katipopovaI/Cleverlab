@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0; /* Убираем поля вокруг текста */
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        height: 30px;
+
+        font-size: 17px;
+        border: 1px solid blue;
+        background-color: rgb(38, 118, 237);
+      }
+      .menu div {
+        color: white;
+        padding: 6px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .menu div:hover {
+        background-color: white;
+        color: rgb(38, 118, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div>Главная</div>
+      <div>О компании</div>
+      <div>Информация</div>
+      <div>О нас</div>
+    </div>
+  </body>
+</html>

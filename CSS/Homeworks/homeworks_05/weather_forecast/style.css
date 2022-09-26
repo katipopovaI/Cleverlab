@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.images {
+  background-position: center;
+}
+
+.weather_sun,
+.weather_snow,
+.weather_blizzard {
+  display: inline-block;
+  border: 1px solid white;
+  margin: 0px;
+}
+.date {
+  background-color: #4682b4;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.temperature {
+  text-align: center;
+  font-size: 20px;
+}
+
+.weather_blizzard:hover {
+  box-shadow: 0px 0px 3px 3px grey;
+}
+.weather_snow:hover {
+  box-shadow: 0px 0px 3px 3px grey;
+}
+.weather_sun:hover {
+  box-shadow: 0px 0px 3px 3px grey;
+}
