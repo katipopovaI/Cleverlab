@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0; /* Убираем поля вокруг текста */
+      }
       .menu {
-        height: 90px;
         justify-content: center;
         align-items: stretch;
+        display: flex;
+
+        width: 700px;
+        height: 30px;
+        font-size: 17px;
+        border: 1px solid blue;
+        background-color: rgb(38, 118, 237);
       }
       .menu div {
+        color: white;
         text-align: center;
         width: 95px;
+        padding: 6px;
         border: 1px solid blue;
         vertical-align: top;
+        text-decoration: none;
+        text-align: center;
+      }
+      .menu div:hover {
+        background-color: white;
+        color: rgb(38, 118, 237);
       }
     </style>
   </head>

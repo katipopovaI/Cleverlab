@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0; /* Убираем поля вокруг текста */
+      }
+
       .menu {
         flex-direction: column;
-        width: 300px;
-        height: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        height: 30px;
+        font-size: 17px;
+        border: 1px solid blue;
+        background-color: rgb(38, 118, 237);
       }
       .menu div {
+        color: white;
+        text-decoration: none;
+        padding: 6px;
         text-align: left;
-        height: 40px;
         border: 1px solid blue;
+      }
+      .menu div:hover {
+        background-color: white;
+        color: rgb(38, 118, 237);
       }
     </style>
   </head>
