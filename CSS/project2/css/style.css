@@ -1,0 +1,111 @@
+body {
+  background: #242b33;
+  width: 1920px;
+  height: 4718px;
+}
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+/*section header*/
+.header {
+  background: url("../img/Rectangle.jpg") center center/cover no-repeat;
+  height: 840px;
+}
+.header_menu {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.header_menu .logo_img {
+  width: 134px;
+  height: 66px;
+  margin-left: 405px;
+}
+.header_menu .menu {
+  margin-left: 435px;
+}
+.header_menu .menu li {
+  margin: 0 auto;
+  margin-right: 40px;
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.header_menu .menu a:link,
+.menu a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 582px;
+  height: 470px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.title .big_text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #d4c17f;
+}
+
+.title .title_logo {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.connection {
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 74px;
+  display: flex;
+  width: 582px;
+  justify-content: flex-start;
+}
+
+.connection .adress,
+.connection .number {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.connection .adress {
+  margin: 0 auto;
+  margin-right: 98px;
+  margin-left: 0px;
+}
+
+.connection .number a:link,
+.number a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+.connection .text,
+.connection .number {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.connection .logo {
+  margin: 0 auto;
+  margin-right: 14px;
+}
