@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .square {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid red;
+        animation-name: myAnimation;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+      }
+      @keyframes myAnimation {
+        from {
+          margin-left: 10px;
+        }
+        to {
+          margin-left: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+  </body>
+</html>
