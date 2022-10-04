@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container .line {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.container .last_element {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+}
+.container img {
+  margin: 0 auto;
+  margin-right: 20px;
+}
+
+.filter_blur {
+  filter: blur(3px);
+}
+
+.filter_brightness {
+  filter: brightness(40%);
+}
+
+.filter_contrast {
+  filter: contrast(100%);
+}
+
+.filter_grayscale {
+  filter: grayscale(0.75);
+}
+
+.filter_saturate {
+  filter: saturate(300%);
+}
+
+.filter_sepia {
+  filter: sepia(100%);
+}
+
+.filter_hue_rotate {
+  filter: hue-rotate(270deg);
+}
+
+.filter_invert {
+  filter: invert(100%);
+}
+.filter_opacity {
+  filter: opacity(50%);
+}
