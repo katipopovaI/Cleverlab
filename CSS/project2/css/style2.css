@@ -6,6 +6,7 @@
 .container {
   width: 1110px;
   margin: 0 auto;
+  position: relative;
 }
 
 /*section header*/
@@ -33,7 +34,9 @@
 }
 .header_menu .menu li {
   list-style-type: none;
+  /*font-family: "Raleway";*/
   font-style: normal;
+  /* font-weight: 400;*/
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -94,7 +97,9 @@
 }
 .connection .text,
 .connection .number {
+  /* font-family: "Raleway";*/
   font-style: normal;
+  /*font-weight: 400;*/
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -113,18 +118,18 @@
 }
 
 .peculiarities {
+  margin: 0 auto;
   padding-top: 120px;
   display: flex;
   justify-content: center;
-  column-gap: 70px;
-  /* изм */
-  position: relative;
+  gap: 70px;
 }
 .peculiarities img {
   margin: 0 auto;
+  align-content: center;
 }
-
 .peculiarities .text_img {
+  margin: 0 auto;
   margin-top: 53px;
   height: 47px;
   font-family: "Roboto";
@@ -132,15 +137,15 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 27px;
+  /* or 135% */
   text-align: center;
   color: #ffffff;
 }
 
 .benefits .ruman2 {
   position: absolute;
-  /* изм */
   top: 90px;
-  right: -140px;
+  left: 950px;
 }
 
 /*section apartments*/
@@ -156,8 +161,7 @@
   line-height: 48px;
   color: #d4c17f;
 }
-
-.img_apartments {
+.apartments .img_apartments {
   position: relative;
   margin: 0 auto;
   margin-top: 100px;
@@ -166,42 +170,27 @@
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+  justify-content: center;
 }
-.img_1,
-.img_2,
-.img_3,
-.img_4 {
-  display: flex;
-  height: 320px;
-  width: 535px;
-}
-.img_1 {
-  background: url("../img/Rectangle_1.jpg") center center/cover no-repeat;
-}
-.img_2 {
-  background: url("../img/Rectangle_2.jpg") center center/cover no-repeat;
-}
-.img_3 {
-  background: url("../img/Rectangle_3.jpg") center center/cover no-repeat;
-}
-.img_4 {
-  background: url("../img/Rectangle_4.jpg") center center/cover no-repeat;
-}
+
 .img_apartments .text_apartments {
-  display: flex;
-  align-items: flex-end;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #ffffff;
 }
+
 .apartments .ruman3 {
   position: absolute;
   margin: 0 auto;
-  /* изм */
-  top: -50px;
-  left: -208px;
+  /*z-index: -1;*/
+  top: 88px;
+  left: -226px;
 }
 
 /*section form*/
@@ -223,10 +212,13 @@
 }
 
 .form .description {
+  /* font-family: "Raleway";*/
   width: 535px;
   font-style: normal;
+  /*font-weight: 400;*/
   font-size: 16px;
   line-height: 24px;
+  /* or 150% */
   color: #ffffff;
 }
 
@@ -244,7 +236,7 @@
   column-gap: 30px;
   row-gap: 46px;
   justify-content: center;
-  margin-top: 76px;
+  align-content: flex-end;
 }
 
 .form_to_fill .form_text,
@@ -257,7 +249,9 @@
   opacity: 0.2;
 }
 input[type="text"] {
+  /*font-family: "Raleway";*/
   font-style: normal;
+  /* font-weight: 400;*/
   font-size: 14px;
   line-height: 27px;
   color: #bebebe;
@@ -266,9 +260,12 @@ input[type="text"] {
 
 .form_to_fill .text,
 .form_question .text {
+  /*font-family: "Raleway";*/
   font-style: normal;
+  /* font-weight: 400;*/
   font-size: 13px;
   line-height: 16px;
+  /* or 123% */
   text-align: center;
   color: #e7e7e7;
 }
@@ -284,10 +281,12 @@ input[type="text"] {
 
 .form_to_fill .buttom1 button,
 .form_question .buttom1 button {
+  /*font-family: "Raleway";*/
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;
+  /* identical to box height, or 169% */
   text-align: center;
   color: #ffffff;
 }
@@ -302,15 +301,22 @@ input[type="text"] {
 .video .video_presentation {
   display: flex;
   margin: 0 auto;
+  /*padding-bottom: 180px;*/
   align-content: flex-start;
   justify-content: center;
-  position: relative;
 }
 
+.video_presentation .presentation {
+  position: relative;
+}
+.video_presentation .button_video {
+  position: absolute;
+  padding-top: 275px;
+}
 .video .ruman4 {
   position: absolute;
-  top: 188px;
-  right: -214px;
+  top: 72px;
+  right: -220px;
 }
 
 /*section map*/
@@ -322,7 +328,6 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  position: relative;
 }
 
 .map .text_map {
@@ -333,11 +338,13 @@ input[type="text"] {
   line-height: 48px;
   color: #d4c17f;
 }
-
+.map .img_map {
+  position: relative;
+}
 .map .ruman5 {
   position: absolute;
-  top: 96px;
-  left: -144px;
+  top: 3650px;
+  left: 266px;
 }
 
 /*section question*/
@@ -347,7 +354,7 @@ input[type="text"] {
 }
 .questions .question_container {
   margin: 0 auto;
-  padding: 180px 0;
+  padding-top: 180px;
 }
 .questions .question_text {
   margin: 0 auto;
@@ -362,6 +369,7 @@ input[type="text"] {
 .questions .form_question {
   display: flex;
   column-gap: 30px;
+  padding-bottom: 180px;
 }
 
 /*section footer*/
@@ -384,7 +392,9 @@ footer .info {
 }
 
 .info .column div {
+  /* font-family: "Raleway";*/
   font-style: normal;
+  /* font-weight: 400;*/
   font-size: 14px;
   letter-spacing: 0.05em;
   color: #ffffff;
