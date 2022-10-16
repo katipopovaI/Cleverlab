@@ -6,7 +6,7 @@
 .container {
   width: 1110px;
   margin: 0 auto;
-  padding: 0 15px;
+  /*padding: 0 15px;*/
 }
 
 /*section header*/
@@ -111,14 +111,15 @@
 .header_burger {
   width: 40px;
   height: 28px;
-  position: relative;
+  position: fixed;
+  margin-left: 650px;
   display: none;
 }
 .burger_line {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: rgb(238, 43, 43);
+  background-color: white;
   position: absolute;
   left: 0;
 }
@@ -143,7 +144,6 @@
   display: flex;
   justify-content: center;
   column-gap: 70px;
-  /* изм */
   position: relative;
 }
 .peculiarities img {
@@ -164,7 +164,6 @@
 
 .benefits .ruman2 {
   position: absolute;
-  /* изм */
   top: 90px;
   right: -140px;
 }
@@ -225,7 +224,6 @@
 .apartments .ruman3 {
   position: absolute;
   margin: 0 auto;
-  /* изм */
   top: -50px;
   left: -208px;
 }
@@ -442,6 +440,12 @@ footer .info {
     transform: translateX(100%);
     transition: 0.2s all linear;
   }
+  .header_menu .logo_img,
+  .title,
+  .connection {
+    display: none;
+  }
+
   .header .menu_active {
     transform: translateX(0);
   }
@@ -450,7 +454,7 @@ footer .info {
     width: 100%;
   }
   .header .menu li {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 80px;
   }
   .header .menu a:last-child {
@@ -462,7 +466,8 @@ footer .info {
     height: 40px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    /*right: 20px;*/
+    left: 500px;
     z-index: 11;
   }
   .menu .menu-close-line {
@@ -478,6 +483,17 @@ footer .info {
   }
   .menu-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
+  }
+  .container {
+    padding: 0 15px 0 15px;
+  }
+  .peculiarities {
+    display: flex;
+    justify-content: left;
+    column-gap: 5px;
+  }
+  .peculiarities .text_img {
+    margin-top: 40px;
   }
 }
 
