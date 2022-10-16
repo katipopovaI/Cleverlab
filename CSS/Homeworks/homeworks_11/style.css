@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+}
+body {
+  height: 1000px;
+}
+header {
+  display: flex;
+  background: url("../homeworks_11/img/1420.jpg") center center/cover no-repeat;
+  height: 30%;
+  background-color: #095c5c;
+}
+.top-metu {
+  display: flex;
+  margin: 0 auto;
+  background-color: rgb(17, 16, 17);
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+main {
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 20%;
+  display: flex;
+}
+main .left-panel {
+  background-color: blueviolet;
+  width: 250px;
+  flex-shrink: 0;
+}
+main .text {
+  width: 1300px;
+  text-align: center;
+}
+.buttom_main {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  height: 20%;
+}
+
+.buttom_main .article {
+  width: calc(100% / 3);
+  background-color: aqua;
+}
+footer {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  padding-top: 20px;
+  color: white;
+  height: 20%;
+  background-color: #050b1c;
+}
+
+/*media start*/
+@media (min-width: 1024px) and (max-width: 1419px) {
+  header {
+    background: url("../homeworks_11/img/1024.jpg") center center/cover
+      no-repeat;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    background: url("../homeworks_11/img/768.jpg") center center/cover no-repeat;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  header {
+    background: url("../homeworks_11/img/480.jpg") center center/cover no-repeat;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  header {
+    background: url("../homeworks_11/img/320.jpg") center center/cover no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .text {
+    height: 60%;
+    width: 100%;
+  }
+  main .left-panel {
+    width: 100%;
+    margin-top: 10px;
+    height: 20%;
+  }
+  .buttom_main {
+    margin: 0 auto;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .buttom_main .article {
+    width: 100%;
+    height: 30%;
+  }
+}
+/*media end*/
