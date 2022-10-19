@@ -4,9 +4,8 @@
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
-  /*padding: 0 15px;*/
 }
 
 /*section header*/
@@ -114,6 +113,7 @@
   position: fixed;
   margin-left: 650px;
   display: none;
+  z-index: 9;
 }
 .burger_line {
   display: block;
@@ -430,8 +430,9 @@ footer .info {
   }
   .menu {
     width: 100%;
-    height: 100%;
-    position: relative;
+    min-height: 100%;
+    position: fixed;
+    /*position: relative;*/
     top: 0;
     left: 0;
     background-color: #2d343c;
@@ -440,7 +441,7 @@ footer .info {
     transform: translateX(100%);
     transition: 0.2s all linear;
   }
-  .header_menu .logo_img,
+  .header_menu .title_logo,
   .title,
   .connection {
     display: none;
@@ -466,9 +467,7 @@ footer .info {
     height: 40px;
     position: absolute;
     top: 20px;
-    /*right: 20px;*/
-    left: 500px;
-    z-index: 11;
+    right: 20px;
   }
   .menu .menu-close-line {
     display: block;
@@ -485,15 +484,61 @@ footer .info {
     transform: translateY(-50%) rotate(-45deg);
   }
   .container {
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 20px;
   }
   .peculiarities {
     display: flex;
-    justify-content: left;
-    column-gap: 5px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    gap: 20px;
   }
   .peculiarities .text_img {
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
     margin-top: 40px;
+    font-size: 14px;
+  }
+  .apartments .text {
+    text-align: center;
+  }
+  .img_apartments {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+  }
+  .img_3,
+  .img_4 {
+    display: none;
+  }
+  .form {
+    display: none;
+  }
+
+  .connection {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .map {
+    display: none;
+  }
+  .questions .question_container {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .questions .form_question {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer .info {
+    display: flex;
+    flex: 1 1 auto;
+    column-gap: 20px;
+    padding-top: 60px;
   }
 }
 

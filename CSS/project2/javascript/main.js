@@ -2,7 +2,7 @@
   const menu = document.querySelector(".menu");
   Window.onscroll = () => {
     if (window.pageYOffset > 59) {
-      menu.classList.and("menu_active");
+      menu.classList.add("menu_active");
     } else {
       menu.classList.remove("menu_active");
     }
