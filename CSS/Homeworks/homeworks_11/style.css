@@ -8,7 +8,7 @@ body {
 }
 header {
   display: flex;
-  background: url("../homeworks_11/img/1420.jpg") center center/cover no-repeat;
+  background: url("img/1420.jpg") center center/cover no-repeat;
   height: 30%;
   background-color: #095c5c;
 }
@@ -67,23 +67,22 @@ footer {
 /*media start*/
 @media (min-width: 1024px) and (max-width: 1419px) {
   header {
-    background: url("../homeworks_11/img/1024.jpg") center center/cover
-      no-repeat;
+    background: url("img/1024.jpg") center center/cover no-repeat;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    background: url("../homeworks_11/img/768.jpg") center center/cover no-repeat;
+    background: url("img/768.jpg") center center/cover no-repeat;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   header {
-    background: url("../homeworks_11/img/480.jpg") center center/cover no-repeat;
+    background: url("img/480.jpg") center center/cover no-repeat;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   header {
-    background: url("../homeworks_11/img/320.jpg") center center/cover no-repeat;
+    background: url("img/320.jpg") center center/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
