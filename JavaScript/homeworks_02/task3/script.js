@@ -1,0 +1,20 @@
+"use strict";
+
+let fractionalNumber = 12.5;
+let integerNumber = 245;
+let line = "Hello";
+let uncertain = undefined;
+let zero = null;
+let truth = true;
+let array = [1, 5, 7, 12, 3, "значение"];
+let names = { Вася: "Имя" };
+let lineFunction = function () {};
+console.log(typeof fractionalNumber);
+console.log(typeof integerNumber);
+console.log(typeof line);
+console.log(typeof uncertain);
+console.log(typeof zero);
+console.log(typeof truth);
+console.log(typeof array);
+console.log(typeof names);
+console.log(typeof lineFunction);

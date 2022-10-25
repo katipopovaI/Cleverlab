@@ -1,0 +1,58 @@
+.container {
+  max-width: 1113px;
+  margin: 0 auto;
+}
+
+/* section header */
+.header {
+  background: url("../img/headerfon.jpg") center center/cover no-repeat;
+  height: 900px;
+  margin: 0 auto;
+}
+.header .center {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 319px;
+  align-content: center;
+}
+.center .small_text {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.center .big_text {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+.center .btn {
+  display: flex;
+  width: 200px;
+  height: 45px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 50px;
+  background-image: url("../img/button_header.png");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
