@@ -8,13 +8,57 @@
   background: url("../img/headerfon.jpg") center center/cover no-repeat;
   height: 900px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+nav .menu {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 40px;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+nav .menu > li {
+  display: inline;
+}
+nav .menu li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.header nav ul {
+  padding-left: 0px;
+}
+
+.header .menu li:first-child {
+  left: 932px;
+  width: 107px;
+  top: 99px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #ffffff;
+  text-align: center;
+}
+.header nav ul li:last-child {
+  padding-right: 0px;
+}
+
+.header_line {
+  position: absolute;
+  top: 100px;
+  z-index: 3;
 }
 .header .center {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 319px;
+  margin-top: 220px;
   align-content: center;
 }
 .center .small_text {
@@ -41,13 +85,19 @@
   color: #ffffff;
 }
 .center .btn {
-  display: flex;
-  width: 200px;
+  background: url("../img/button_header.png") center center/cover no-repeat;
   height: 45px;
+  width: 200px;
   margin: 0 auto;
-  padding: 0;
   margin-top: 50px;
-  background-image: url("../img/button_header.png");
+  border: none;
+  cursor: pointer;
+}
+.btn .btn_text {
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
