@@ -1,15 +1,15 @@
 "use strict";
 
-let amountPhoto = prompt("Сколько изображений у вас в галерее?");
+let maxWhite = 984 / 4;
+alert(`Максимальная ширина фото, для 4 фото в ряду:${maxWhite}`);
+let amountPhoto = prompt("Сколько изображений у вас в галерее?", 4);
 amountPhoto = Number(amountPhoto);
-let whitePhoto = prompt("Какая ширина 1 изображения?");
+let whitePhoto = prompt("Какая ширина 1 изображения?", 246);
 whitePhoto = Number(whitePhoto);
 let indentWhitePhoto = 10 + whitePhoto;
-let maxWhite = 984 / 4;
 let photoRow = Math.floor(1024 / indentWhitePhoto);
-let Row = Math.floor(amountPhoto / photoRow);
-let remainderPhoto = amountPhoto % photoRow;
-alert(`Максимальная ширина фото, для 4 фото в ряду:${maxWhite}`);
+let row = Math.floor(amountPhoto / photoRow);
+let imgLastRow = amountPhoto - photoRow * row || photoRow;
 alert(`Количество изображений в каждом ряду:${photoRow}`);
-alert(`Количество полных рядов:${Row}`);
-alert(`Количество изображений в последнем ряду:${remainderPhoto}`);
+alert(`Количество полных рядов:${row}`);
+alert(`Количество изображений в последнем ряду:${imgLastRow}`);
