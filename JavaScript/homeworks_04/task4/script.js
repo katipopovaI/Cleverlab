@@ -3,7 +3,7 @@
 let userName = prompt("Как вас зовут?", "");
 let date = new Date();
 let hour = date.getHours();
-if (+userName == true) {
+if (userName) {
   switch (+hour) {
     case 6:
     case 7:
