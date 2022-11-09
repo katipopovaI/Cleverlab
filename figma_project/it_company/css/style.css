@@ -106,3 +106,72 @@ nav .menu li a {
   text-align: center;
   color: #ffffff;
 }
+
+/* section benefits */
+.advantage {
+  /* display: flex; */
+  margin: 0 auto;
+  height: 488px;
+  padding-top: 110px;
+  background-color: #ffffff;
+}
+
+.advantage .big_text {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #323232;
+}
+.advantage .small_text {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #999999;
+}
+
+.advantage .logo_text {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 27px;
+}
+.logo_text .column_1 {
+  display: flex;
+  margin: 0 auto;
+}
+.column_1 .column_text {
+  display: flex;
+  flex-direction: column;
+  column-gap: 12px;
+}
+.column_text h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.column_text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
