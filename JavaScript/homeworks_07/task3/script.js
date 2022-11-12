@@ -27,7 +27,7 @@ let factorialNumber = function () {
 };
 factorialNumber();*/
 
-/arrow function/;
+// arrow function;
 let numeric = +prompt("Введите натуральное число", "");
 let factorial = 1;
 let c = numeric;
