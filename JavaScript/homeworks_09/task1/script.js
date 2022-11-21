@@ -22,10 +22,6 @@ if (person["middle name"]) {
   alert("такого свойства нет");
 }
 
-// for (let i in person) {
-//   alert(`${person[i]}`);
-// }
-// аналогичный вывод через массив
 alert(
   `оставшееся количество свойств у объекта person:  ${Object.values(person)}`
 );
@@ -33,11 +29,9 @@ alert(
 let sumNumeric = () => {
   let sum = 0;
   for (let j in person) {
-    console.log(typeof person[j]);
     if (typeof person[j] === "number") {
       sum++;
     }
-    console.log(sum);
   }
   return sum;
 };
