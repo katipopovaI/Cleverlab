@@ -14,6 +14,14 @@ let threeDigit = () => {
 };
 threeDigit(cloneArr);
 
+let threeDigit1 = reduce((total, amount, index, array) => {
+  if (
+    Math.abs(math.trunc(total % 100)) <= 9 &&
+    Math.abs(math.trunc(total % 100)) >= 1
+  )
+    return index[total];
+});
+
 let multiplicityFive = () => {
   let result;
   for (let j = 0; j <= arr.length; j++) {
@@ -54,15 +62,9 @@ let productElements = () => {
 alert(`произведение элементов массива: ${productElements(arr)}`);
 
 // Альтернативный подсчет произведения
-// let product1 = 1;
-// arr.forEach((element) => {
-//   product1 *= element;
-// });
-// alert(`произведение элементов массива: ${product1}`);
+// let productElement = arr.reduce((total, amount) => total * amount);
+// alert(`произведение элементов массива: ${productElement}`);
 
-let averageElements = () => {
-  let average;
-  average = productElements() / arr.length;
-  return average;
-};
-alert(`среднее арифметическое элементов массива arr: ${averageElements(arr)}`);
+let averages = arr.reduce((total, amount) => total + amount) / arr.length;
+
+alert(`среднее арифметическое элементов массива arr: ${averages}`);
