@@ -14,14 +14,6 @@ let threeDigit = () => {
 };
 threeDigit(cloneArr);
 
-let threeDigit1 = reduce((total, amount, index, array) => {
-  if (
-    Math.abs(math.trunc(total % 100)) <= 9 &&
-    Math.abs(math.trunc(total % 100)) >= 1
-  )
-    return index[total];
-});
-
 let multiplicityFive = () => {
   let result;
   for (let j = 0; j <= arr.length; j++) {
