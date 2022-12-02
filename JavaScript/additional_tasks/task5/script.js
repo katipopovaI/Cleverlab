@@ -30,11 +30,14 @@ let remainderSec = () => {
   console.log(resultS);
   return resultS;
 };
-function showMessage() {
-  return console.log(
-    `До конца дня осталось:${remainderHours()}часов:${remainderMinutes()}минуты:${remainderSec()}секунды`
-  );
-}
+//function showMessage() {
+//return console.log(
+// `До конца дня осталось:${remainderHours()}часов:${remainderMinutes()}минуты:${remainderSec()}секунды`
+// );
+//}
 
-showMessage();
-setInterval(showMessage, 1000, remainderTime);
+//showMessage();
+//setInterval(showMessage, 1000, remainderTime);
+
+const bodyElement = document.body;
+console.log(bodyElement);
