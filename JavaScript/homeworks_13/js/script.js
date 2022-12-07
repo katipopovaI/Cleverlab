@@ -18,10 +18,11 @@ const promoBlock = document.querySelectorAll(".promo__adv>img");
 const genre = document.querySelector(".promo__genre");
 const fond = document.querySelector(".promo__bg");
 const list = document.querySelectorAll(".promo__interactive-item");
-
+//list.append("Какой-то текст");
+const len = list.length;
 const newListO = [];
 const newList = [...list];
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < len; i++) {
   console.log(newList[i].textContent);
   newListO[i] = newList[i].textContent;
 }
@@ -30,6 +31,7 @@ list.forEach((item, index) => {
   let i = index + 1;
   item.textContent = `${i}.${newListO[index]}`;
 });
+console.log(newListO);
 
 fond.style.backgroundImage = "url(img/bg.jpg)";
 genre.textContent = "драма";
