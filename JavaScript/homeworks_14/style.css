@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.counter {
+  height: 500px;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 4px double rgb(10, 239, 48);
+  font-size: 20px;
+}
+
+.startCounter._active .start_button span:first-child {
+  display: none;
+}
+.startCounter._active .start_button span:last-child {
+  display: block;
+}
+.start_button span:first-child {
+  display: block;
+}
+
+.start_button span:last-child {
+  display: none;
+}
