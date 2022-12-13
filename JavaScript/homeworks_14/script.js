@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const enumerator = document.querySelector(".enumerator");
   let timer;
   function onClick() {
+    console.log(startButton.textContent);
     timer = clearInterval(timer);
     let a = +firstNumber.value;
     let b = +secondNumber.value;
     let max;
     let min;
-    let newStart;
     if (a > b) {
       max = a;
       min = b;
@@ -66,25 +66,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-    if ((startButton.innerHTML = "Старт счетчика") && a != b) {
-      enumerator.textContent = max;
-      startButton.textContent = "Пауза";
-      timer = setInterval(() => {
-        if ((startButton.textContent = "Пауза")) {
-          enumerator.textContent = --max;
-          newStart = max;
-          console.log(newStart);
-          if (max <= min) {
-            timer = clearInterval(timer);
-            startButton.textContent = "Счетчик отработал";
-          }
-        } else {
-          startButton.textContent = "Пауза";
-          max = newStart;
+    startButton.value = "Запуск";
+    //if (startButton.value === "Запуск" && a != b) {
+    console.log(startButton.value);
+
+    timer = setInterval(() => {
+      if (startButton.value === "Запуск") {
+        startButton.textContent = "Пауза";
+        enumerator.textContent = parseInt(max--);
+        if (max < min) {
           timer = clearInterval(timer);
+          startButton.textContent = "Счетчик отработал";
         }
-      }, 1000);
-    }
+      } else {
+        console.log(startButton.value);
+        startButton.value = "Запуск";
+        startButton.textContent = "Старт";
+        timer = clearInterval(timer);
+      }
+      //startButton.value = "Пауза";
+    }, 1000);
+    //startButton.value = "Пауза";
+
+    console.log(startButton.value);
   }
+
   startButton.addEventListener("click", onClick);
 });
