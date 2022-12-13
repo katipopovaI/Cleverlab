@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     timer = setInterval(() => {
       if (startButton.value === "Запуск") {
         startButton.textContent = "Пауза";
-        enumerator.textContent = parseInt(max--);
-        if (max < min) {
+        enumerator.textContent = parseInt(min++);
+        if (min > max) {
           timer = clearInterval(timer);
           startButton.textContent = "Счетчик отработал";
         }
