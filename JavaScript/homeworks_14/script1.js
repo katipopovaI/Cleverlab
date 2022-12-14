@@ -25,15 +25,14 @@ function onClick() {
   timer = clearInterval(timer);
   if (enumerator.textContent != max) {
     timer = setInterval(() => {
-      if (max == min) {
+      if (max === min) {
         timer = clearInterval(timer);
         startButton.textContent = "Счетчик отработал";
       }
       enumerator.textContent = parseInt(min++);
+      console.log(max, min);
     }, 1000);
-    startButton.textContent = "Пауза";
-  } else {
-    startButton.textContent = "Пуск";
-    timer = clearInterval(timer);
+    // startButton.textContent = "Пауза";
+    // timer = clearInterval(timer);
   }
 }
