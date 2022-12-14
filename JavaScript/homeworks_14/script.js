@@ -1,25 +1,17 @@
 "use strict";
 
 const counterButton = document.querySelector(".startCounter");
-const errorF = document.querySelector(".errorF");
-const errorS = document.querySelector(".errorS");
-const errorC = document.querySelector(".errorC");
+const enumerator = document.querySelector(".enumerator");
 const firstNumber = document.querySelector(".first");
 const secondNumber = document.querySelector(".second");
 const startButton = document.querySelector(".start_button");
-const comparisonButton = document.querySelector(".comparisonButton");
-
-//let a = firstNumber.addEventListener("blur", takeNumberFirst);
-//function takeNumberFirst() {
-// return firstNumber.value;
-//}
-
-//let b = secondNumber.addEventListener("blur", takeNumberSecond);
-//function takeNumberSecond() {
-// console.log(secondNumber.value);
-// return secondNumber.value;
-//}
-
+const errorC = document.querySelector(".errorC");
+const errorF = document.querySelector(".errorF");
+const errorS = document.querySelector(".errorS");
+let a;
+let b;
+let max;
+let min;
 firstNumber.addEventListener(
   "blur",
   function () {
@@ -42,54 +34,42 @@ secondNumber.addEventListener(
   },
   false
 );
-document.addEventListener("DOMContentLoaded", function () {
-  const startButton = document.querySelector(".start_button");
-  const enumerator = document.querySelector(".enumerator");
-  let timer;
-  function onClick() {
-    console.log(startButton.textContent);
-    timer = clearInterval(timer);
-    let a = +firstNumber.value;
-    let b = +secondNumber.value;
-    let max;
-    let min;
-    if (a > b) {
-      max = a;
-      min = b;
-    } else {
-      if (a < b) {
-        max = b;
-        min = a;
-      } else {
-        if (a === b) {
-          errorC.textContent = "Введите разные числа";
-        }
-      }
-    }
-    startButton.value = "Запуск";
-    //if (startButton.value === "Запуск" && a != b) {
-    console.log(startButton.value);
-
-    timer = setInterval(() => {
-      if (startButton.value === "Запуск") {
-        startButton.textContent = "Пауза";
-        enumerator.textContent = parseInt(min++);
-        if (min > max) {
-          timer = clearInterval(timer);
-          startButton.textContent = "Счетчик отработал";
-        }
-      } else {
-        console.log(startButton.value);
-        startButton.value = "Запуск";
-        startButton.textContent = "Старт";
-        timer = clearInterval(timer);
-      }
-      //startButton.value = "Пауза";
-    }, 1000);
-    //startButton.value = "Пауза";
-
-    console.log(startButton.value);
+firstNumber.addEventListener("blur", takeNumber);
+secondNumber.addEventListener("blur", takeNumber);
+function takeNumber() {
+  a = +firstNumber.value;
+  b = +secondNumber.value;
+  max = Math.max(a, b);
+  min = Math.min(a, b);
+  console.log(a, b);
+  if (a == b) {
+    errorC.textContent = "Введите разные числа";
   }
+}
 
-  startButton.addEventListener("click", onClick);
-});
+let timer;
+startButton.addEventListener("click", onClick);
+function onClick() {
+  timer = clearInterval(timer);
+  if (a == b) {
+    errorC.textContent = "Введите разные числа";
+  }
+  if (startButton.value == "Стоп" && a != b) {
+    startButton.textContent = "Пауза";
+    timer = setInterval(() => {
+      if (max === min) {
+        timer = clearInterval(timer);
+        startButton.textContent = "Счетчик отработал";
+      }
+      enumerator.textContent = parseInt(min++);
+      console.log(startButton.value);
+    }, 1000);
+    startButton.value = "Работа";
+  } else {
+    if (startButton.value == "Работа") {
+      timer = clearInterval(timer);
+      startButton.textContent = "Пуск";
+      startButton.value = "Стоп";
+    }
+  }
+}
