@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
       "Скотт Пилигрим против...",
     ],
   };
-  const adv = document.querySelectorAll(".promo_adv img");
-  const poster = document.querySelector(".promo_bg");
+  const adv = document.querySelectorAll(".promo__adv img");
+  const poster = document.querySelector(".promo__bg");
   const genre = poster.querySelector(".promo__genre");
-  const movieList = document.querySelector(".promo_interactive-list");
+  const movieList = document.querySelector(".promo__interactive-list");
   const addForm = document.querySelector("form.add");
-  const addInput = addForm.querySelector(".adding_input");
+  const addInput = addForm.querySelector(".adding__input");
   const checkbox = addForm.querySelector('[type="checkbox"]');
 
   addForm.addEventListener("submit", (event) => {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     films.forEach((film, i) => {
       parent.innerHTML += `
-    <li class="promo_interactive-item">${i + 1} ${film}
+    <li class="promo__interactive-item">${i + 1} ${film}
     <div class="delete"></div>
     </li>
     `;
