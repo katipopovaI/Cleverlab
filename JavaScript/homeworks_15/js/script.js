@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-  //});
+
   //TIMER
   const deadline = "2023-01-01";
 
