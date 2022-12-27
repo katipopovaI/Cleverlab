@@ -111,7 +111,7 @@ nav .menu li a {
 .advantage {
   /* display: flex; */
   margin: 0 auto;
-  height: 488px;
+  height: 703px;
   padding-top: 110px;
   background-color: #ffffff;
 }
@@ -150,17 +150,32 @@ nav .menu li a {
   justify-content: space-between;
   column-gap: 27px;
 }
-.logo_text .column_1 {
+.logo_text .column {
   display: flex;
   margin: 0 auto;
+  /* margin-top: 70px; */
 }
-.column_1 .column_text {
+
+.column .column_img {
+  /* display: flex; */
+  /* margin: 0 auto; */
+  /* margin-right: 18px; */
+  height: 110px;
+  width: 110px;
+  background: url("../logo/logo_advantage.png") center center/cover no-repeat;
+}
+
+.column .column_text {
   display: flex;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-left: 17px;
   flex-direction: column;
   column-gap: 12px;
 }
 .column_text h3 {
   font-family: "Montserrat";
+  padding-bottom: 12px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -174,4 +189,28 @@ nav .menu li a {
   font-size: 14px;
   line-height: 22px;
   color: #999999;
+}
+.advantage .btn_services {
+  background: url("../img/button_header.png") center center/cover no-repeat;
+  display: flex;
+  height: 45px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 45px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  /* align-content: center; */
+}
+.btn_services .btn_services_text {
+  /* display: flex; */
+  /* margin: 0 auto; */
+  font-family: "Montserrat";
+  padding-top: 13px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
 }
