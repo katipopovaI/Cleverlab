@@ -21,9 +21,12 @@ function addNum() {
   this.innerHTML += result;
 }
 addNum.apply(btn2, arr);
-
+let p = prompt("name");
+console.log(p);
 function inputText(a) {
   this.value += "," + a;
+  console.log(this);
 }
 const newinputText = inputText.bind(elem);
-newinputText("мой друг");
+//newinputText("мой друг");
+newinputText(p);
