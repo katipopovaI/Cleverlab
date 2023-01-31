@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-/******/ (() => {
-  // webpackBootstrap
-  /******/ "use strict";
-  /******/
-  /******/
-  /******/
-})();
-=======
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -81,4 +72,3 @@ myModuleItem.goodbye();
 /******/ })()
 ;
 //# sourceMappingURL=bundle.js.map
->>>>>>> c95c828646c718712ca222da6b943325cbfecb45
