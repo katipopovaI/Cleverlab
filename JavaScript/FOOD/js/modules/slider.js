@@ -102,7 +102,6 @@ function slider({
     }
 
     slidesField.style.transform = `translateX(-${offset}px)`;
-
     if (slideIndex == slides.length) {
       slideIndex = 1;
     } else {
